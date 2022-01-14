@@ -11,6 +11,7 @@ CSS Index
 ========================
 1. Default css
 2. Header css
+3. Hero css
 
 */
 
@@ -273,6 +274,11 @@ a.btn-primary {
   line-height: 1;
 }
 
+a.btn-primary:hover {
+  background: #fff;
+  color: var(--primary-color);
+}
+
 a.btn-primary::after {
   background: unset !important;
 }
@@ -313,4 +319,27 @@ a.btn-primary::after {
 
 .menu ul li .dropdown nav ul li:hover a {
   color: var(--secondary-color);
+}
+
+/* 3. Hero css */
+
+#hero {
+  background: var(--primary-color);
+  min-height: 650px;
+  display: flex;
+  align-items: center;
+}
+
+h1.hero-title {
+  font-size: 60px;
+  color: #fff;
+  line-height: 1.2;
+  font-weight: 600;
+}
+
+.hero-content span {
+  display: block;
+  color: #fff;
+  line-height: 1.7;
+  font-size: 17px;
 }
