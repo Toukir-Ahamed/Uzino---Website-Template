@@ -15,7 +15,7 @@ CSS Index
 */
 
 /* 1. Default css */
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap");
 
 html {
   scroll-behavior: smooth;
@@ -30,20 +30,20 @@ html {
 }
 
 :root {
-  --primary-font: "Poppins", sans-serif;
+  --primary-font: "Lato", sans-serif;
 }
 
 :root {
-  --primary-color: #2e3d62;
-  --btn-color: #ff8257;
-  --body-text-color: #666e82;
+  --primary-color: #1d2a3b;
+  --secondary-color: #545cf5;
+  --body-color: #747e8c;
 }
 
 body {
   font-family: var(--primary-font);
   font-weight: normal;
   font-style: normal;
-  color: var(--body-text-color);
+  color: var(--body-color);
 }
 
 img {
@@ -53,7 +53,7 @@ img {
 a {
   text-decoration: none;
   transition: 0.3s;
-  color: #666e82;
+  color: var(--body-color);
 }
 
 ul {
@@ -172,6 +172,12 @@ h6 {
   padding-right: 15px;
 }
 
+.col-9 {
+  width: 75%;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
 .col-12 {
   width: 100%;
   padding-left: 15px;
@@ -208,4 +214,46 @@ h6 {
 
 .d-none {
   display: none;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-right {
+  text-align: right;
+}
+
+/* 2. Header css */
+
+#header {
+  background: var(--primary-color);
+  padding: 40px 0px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  width: 100%;
+}
+
+.menu ul li {
+  display: inline-block;
+  position: relative;
+}
+
+.menu ul li a {
+  color: #fff;
+  padding: 10px 15px;
+  display: block;
+  line-height: 1;
+  font-size: 16px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+
+a.btn-primary {
+  padding: 17px 50px !important;
+  background: var(--secondary-color);
+  margin-left: 45px;
+  border-radius: 100px;
+  line-height: 1;
 }
