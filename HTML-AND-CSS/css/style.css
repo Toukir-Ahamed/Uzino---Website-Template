@@ -12,6 +12,7 @@ CSS Index
 1. Default css
 2. Header css
 3. Hero css
+4. Services css
 
 */
 
@@ -201,6 +202,14 @@ h6 {
   padding-top: 150px;
 }
 
+.mt-100 {
+  margin-top: 100px;
+}
+
+.mb-100 {
+  margin-bottom: 100px;
+}
+
 .pb-100 {
   padding-bottom: 100px;
 }
@@ -301,6 +310,7 @@ a.btn-primary::after {
   opacity: 0;
   visibility: hidden;
   transition: 0.3s;
+  z-index: 9999;
 }
 
 .menu ul li:hover > .dropdown {
@@ -324,9 +334,13 @@ a.btn-primary::after {
 /* 3. Hero css */
 
 #hero {
-  background: var(--primary-color);
+  background: url(../images/hero-bg.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: bottom center;
   min-height: 650px;
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
 }
 
@@ -342,4 +356,101 @@ h1.hero-title {
   color: #fff;
   line-height: 1.7;
   font-size: 17px;
+}
+
+.hero-img img {
+  position: relative;
+}
+
+.btn-group {
+  border-radius: 3px;
+  display: flex;
+  gap: 30px;
+  margin-top: 30px;
+}
+
+.btn-app {
+  border-radius: 3px;
+  background: #fff;
+  display: flex;
+  align-items: center;
+  padding: 14px 30px 15px 30px;
+  transition: 0.3s;
+}
+
+.btn-details {
+  padding-left: 10px;
+}
+
+.btn-details h5 {
+  color: var(--primary-color);
+  font-weight: 700;
+  font-size: 17px;
+  margin-bottom: 0;
+}
+
+.btn-details span {
+  display: block;
+  color: var(--body-color);
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.btn-google {
+  background: var(--secondary-color);
+}
+
+.btn-google span,
+.btn-google h5 {
+  color: #fff;
+}
+
+.btn-app:hover {
+  transform: translateY(-3px);
+}
+
+/* 4. Services css */
+
+#services {
+}
+
+.primary-title h2 {
+  color: var(--primary-color);
+  font-size: 50px;
+  font-weight: 700;
+  line-height: 1.3;
+  display: inline-block;
+}
+
+.service-title span {
+  display: block;
+  width: 600px;
+  margin: auto;
+  line-height: 1.6;
+  font-size: 17px;
+  color: var(--body-color);
+}
+
+.service-col-bg {
+  background: url("../images/service-col-bg.png");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.icon-box {
+  border-radius: 10px;
+  box-shadow: 0px 6px 47px 3px rgba(37, 37, 37, 0.05);
+  padding: 40px 25px;
+}
+
+.icon-box span {
+  display: block;
+  font-size: 30px;
+  color: var(--secondary-color);
+}
+
+.icon-box h3 {
+  display: block;
+  color: var(--primary-color);
 }
