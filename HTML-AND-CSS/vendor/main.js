@@ -53,4 +53,29 @@ $(document).ready(function(){
     //  Wow Js Animation
 
     new WOW().init();
+
+    // Tesimonial active
+
+    $('.slider-for').slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 2000,
+        arrows: true,
+        fade: true,
+        asNavFor: '.slider-nav',
+        prevArrow: '<button class="arrow_btn left"><span class="arrow_left"></span></button>',
+        nextArrow: '<button class="arrow_btn right"><span class="arrow_right"></span></button>'
+      });
+      $('.slider-nav').slick({
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        asNavFor: '.slider-for',
+        dots: false,
+        centerMode: true,
+        focusOnSelect: true,
+        variableWidth: true
+    });
+          
+
 });

@@ -15,6 +15,12 @@ CSS Index
 4. Services css
 5. About css
 6. Features css
+7. Security css
+8. Testimonial css
+9. Trail css
+10. Blog css
+11. Newsletter css
+12. Footer css
 
 */
 
@@ -697,4 +703,441 @@ a.btn:hover span {
 
 .feature-item:hover {
   transform: translateY(-5px);
+}
+
+/* 7. Security css */
+
+#security {
+  background: url("../images/security-bg.png");
+  background-position: left;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.security-title .primary-title h2 {
+  font-size: 45px;
+}
+
+.security-title span {
+  font-size: 17px;
+  line-height: 1.7;
+}
+
+.security-list {
+  margin-top: 15px;
+  line-height: 2;
+}
+
+.security-list > span {
+  display: block;
+}
+
+.security-list > span > span {
+  color: var(--secondary-color);
+  font-size: 25px;
+  margin-right: 10px;
+  position: relative;
+  top: 5px;
+}
+
+.security-btn {
+  margin-top: 25px;
+}
+
+/* 8. Testimonial css */
+
+.testimonial-title span {
+  display: block;
+  width: 600px;
+  margin: auto;
+  line-height: 1.6;
+  font-size: 17px;
+}
+
+.testimonial-item {
+  text-align: center;
+  margin-top: 50px;
+}
+
+.testimonial-img {
+  position: relative;
+}
+
+.testimonial-img::after {
+  position: absolute;
+  content: "";
+  height: 1px;
+  width: 100%;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgb(0, 0, 0);
+  opacity: 0.102;
+  z-index: -1;
+}
+
+.testimonial-item .quote {
+  width: 550px;
+  margin: auto;
+  margin-top: 40px;
+}
+
+.quote > span {
+  font-size: 20px;
+  line-height: 1.5;
+  color: var(--primary-color);
+  font-weight: 500;
+  width: 550px !important;
+  display: block;
+  margin: auto;
+}
+
+.icon {
+  margin: 10px 0px;
+}
+
+.icon span {
+  font-size: 50px;
+  color: var(--secondary-color);
+}
+
+.info {
+  margin-bottom: 10px;
+}
+
+.info span strong {
+  color: var(--primary-color);
+}
+
+.info span {
+  color: var(--secondary-color);
+  font-size: 18px;
+}
+
+.rating span {
+  color: #ef8c1c;
+}
+
+/* Slider */
+
+.testimonial-img img {
+  margin: 0px 40px !important;
+  transform: scale(0.4);
+  transition: 0.3s !important;
+}
+
+.testimonial-img img.slick-active {
+  transform: scale(0.4);
+  transition: 0.3s !important;
+}
+
+.testimonial-img img.slick-active {
+  transform: scale(0.6);
+  transition: 0.3s !important;
+}
+
+.testimonial-img img.slick-active.slick-current {
+  transform: scale(0.9);
+  transition: 0.3s !important;
+}
+
+button.slick-arrow {
+  display: none !important;
+}
+
+button.arrow_btn {
+  display: inline-block !important;
+  background: none !important;
+  border: none !important;
+  position: absolute;
+  top: -90px;
+}
+
+button.arrow_btn span {
+  font-size: 20px;
+  color: #fff;
+  height: 30px;
+  width: 30px;
+  background: var(--primary-color);
+  border-radius: 100px;
+  line-height: 30px;
+  padding: 13px;
+  cursor: pointer;
+  transition: 0.1s;
+}
+
+button.arrow_btn.left {
+  left: -20px;
+}
+
+button.arrow_btn.right {
+  right: -20px;
+}
+
+button.arrow_btn:hover span {
+  background: var(--secondary-color);
+}
+
+/* 9. Trail css */
+
+#trail {
+  background: url("../images/trail-bg.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.trail-title .primary-title h2 {
+  color: #fff;
+}
+
+.trail-title span {
+  color: #fff;
+}
+
+.trail-btn a.btn {
+  background: #fff;
+  display: inline-block;
+  text-align: center;
+  line-height: 33px;
+  padding: 10px 33px;
+  width: 220px;
+  border-radius: 5px;
+}
+
+/* 10. Blog css */
+
+.blog-item {
+  border-radius: 10px;
+  background-color: #fff;
+  box-shadow: 0px 6px 47px 3px rgba(37, 37, 37, 0.05);
+  padding: 30px;
+  transition: 0.3s;
+  position: relative;
+  overflow: hidden;
+}
+
+.blog-item .date {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.blog-item .date span {
+  display: block;
+  background: var(--secondary-color);
+  color: #fff;
+  padding: 5px 15px;
+  font-size: 14px;
+  border-bottom-right-radius: 10px;
+}
+
+.blog-title span {
+  display: block;
+  width: 600px;
+  margin: auto;
+  line-height: 1.6;
+  font-size: 17px;
+}
+
+.user-info a:last-child {
+  margin-left: 20px;
+}
+
+.user-info {
+  margin-bottom: 15px;
+}
+
+.blog-content {
+  margin-left: 15px;
+}
+
+.blog-content a {
+  display: block;
+}
+
+.blog-content h4 {
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--primary-color);
+  line-height: 1.6;
+  transition: 0.2s;
+}
+
+.except {
+  margin-bottom: 15px;
+}
+
+.except span {
+  font-size: 17px;
+  line-height: 1.7;
+}
+
+.blog-content a:hover h4 {
+  color: var(--secondary-color);
+}
+
+.user-info a {
+  display: inline-block;
+}
+
+.blog-item:hover {
+  transform: translateY(-5px);
+}
+
+/* 11. Newsletter css */
+
+.newsletter-section {
+  border-radius: 10px;
+  background-color: #fff;
+  box-shadow: 0px 6px 47px 3px rgba(37, 37, 37, 0.05);
+}
+
+.newsletter-title .primary-title h2 {
+  font-size: 30px;
+}
+
+.newsletter-title span {
+  width: 315px;
+  display: block;
+  line-height: 1.7;
+}
+
+.form {
+  text-align: right;
+}
+
+.form form {
+  height: 60px;
+  width: 100%;
+  position: relative;
+}
+
+.form input {
+  border: 1px solid var(--body-color);
+  height: 100%;
+  outline: none;
+  padding-left: 20px;
+  border-radius: 2px;
+  width: 90%;
+  transition: 0.3s;
+}
+
+.form input[type="email"]:focus {
+  border-color: var(--secondary-color);
+}
+
+.form input[type="submit"] {
+  border: none;
+  background: var(--secondary-color);
+  color: #fff;
+  padding: 0px 30px;
+  position: absolute;
+  right: 11px;
+  width: 160px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 500;
+  height: 40px;
+  cursor: pointer;
+  top: 50%;
+  transform: translateY(-50%);
+  transition: 0.2s;
+}
+
+.form input[type="submit"]:hover {
+  background: var(--primary-color);
+}
+
+.news-divider div {
+  width: 100%;
+}
+
+.news-divider {
+  border-radius: 10px;
+  background-color: #fff;
+  box-shadow: 0px 6px 47px 3px rgba(37, 37, 37, 0.05);
+  padding: 50px;
+  position: relative;
+  bottom: -100px;
+}
+
+/* 12. Footer css */
+
+#footer {
+  background: var(--primary-color);
+}
+
+.widget-1 a {
+  display: block;
+}
+
+.widget-1 .logo {
+  margin-bottom: 30px;
+}
+
+.widget-1 .tel_number {
+  color: #fff;
+  margin-bottom: 15px;
+}
+
+.widget-1 span {
+  display: block;
+  margin-bottom: 7px;
+}
+
+.widget-1 a:hover {
+  color: #fff;
+}
+
+.social {
+  margin-top: 30px;
+}
+
+.social a {
+  display: inline-block;
+  height: 35px;
+  width: 35px;
+  background: #fff;
+  line-height: 1;
+  text-align: center;
+  margin-right: 10px;
+  border-radius: 100px;
+}
+
+.social a span {
+  margin-bottom: 0px;
+  line-height: 35px;
+  font-size: 15px;
+  transition: 0.3s;
+}
+
+.social a:hover {
+  background: var(--secondary-color);
+}
+
+.social a:hover span {
+  color: #fff;
+  transform: rotate(360deg);
+}
+
+.widget-2 h4,
+.widget-3 h4,
+.widget-4 h4,
+.widget-5 h4 {
+  font-size: 20px;
+  color: #fff;
+  font-weight: 700;
+  letter-spacing: 1px;
+  margin-bottom: 40px;
+}
+
+.widget-item a {
+  display: block;
+  margin-bottom: 15px;
+  line-height: 1.6;
+}
+
+.widget-item a:hover {
+  color: #fff;
 }
