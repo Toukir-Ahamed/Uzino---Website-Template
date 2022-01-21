@@ -12,6 +12,303 @@
 
 /* small mobile :320px. */
 @media (max-width: 767px) {
+  .container {
+    padding: 0px 30px;
+    width: 100%;
+  }
+
+  .jc-s-b {
+    justify-content: space-between;
+  }
+
+  .sm-d-none {
+    display: none;
+  }
+
+  .sm-d-block {
+    display: block;
+  }
+
+  .sm-text-center {
+    text-align: center;
+  }
+
+  .col-sm-full {
+    width: 100%;
+  }
+
+  .col-sm-6 {
+    width: 50%;
+  }
+
+  nav .menu {
+    position: fixed;
+    background: #222;
+    text-align: left;
+    width: 300px;
+    height: 100vh;
+    left: 0px;
+    top: 0px;
+    z-index: 999;
+    padding-bottom: 15px;
+    overflow-y: auto;
+  }
+
+  nav .menu ul {
+    padding: 10px 20px;
+  }
+
+  nav .menu ul li {
+    display: block;
+    border-bottom: 1px solid rgba(117, 117, 117, 0.13);
+  }
+
+  nav .menu ul li:last-child {
+    border-bottom: none;
+  }
+
+  a.btn-primary {
+    margin-left: 0px;
+    margin-top: 30px;
+    text-align: center;
+  }
+
+  nav .menu ul li a {
+    display: block;
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    padding: 15px 0px;
+  }
+
+  .menu ul li a::after {
+    content: unset;
+  }
+
+  .multipages span {
+    cursor: pointer;
+    display: block;
+    color: #fff;
+    font-size: 20px;
+    position: absolute;
+    right: 0;
+    top: 10px;
+  }
+
+  nav .menu ul li > .dropdown {
+    opacity: 1;
+    top: 100%;
+    visibility: visible;
+  }
+
+  nav .menu ul li:hover > .dropdown {
+    top: 100%;
+  }
+
+  .dropdown {
+    width: 100% !important;
+    border-radius: 0px !important;
+    position: relative !important;
+    background: #222 !important;
+    border: 1px solid rgba(117, 117, 117, 0.13);
+    padding: 0px !important;
+    margin: 0px !important;
+  }
+
+  .dropdown nav ul {
+    padding: 0px 0px 0px 20px !important;
+  }
+
+  li .dropdown {
+    display: none;
+  }
+
+  .mobile-nav {
+    text-align: right;
+  }
+
+  .mobile-nav .icon_menu {
+    font-size: 30px;
+    color: #fff;
+    cursor: pointer;
+  }
+
+  /* Hero css */
+
+  #hero {
+    min-height: 650px;
+  }
+
+  h1.hero-title {
+    font-size: 40px;
+    line-height: 1.2;
+  }
+
+  .hero-content > span {
+    font-size: 15px;
+  }
+
+  .btn-app {
+    padding: 5px 20px;
+  }
+
+  /* Services css */
+
+  #services {
+    padding-bottom: 30px;
+  }
+
+  .service-title .primary-title h2 {
+    font-size: 35px;
+  }
+
+  .service-title > span {
+    width: 100%;
+    font-size: 16px;
+  }
+
+  .service-item {
+    flex-direction: column;
+    margin-bottom: 70px;
+  }
+
+  .icon-box {
+    text-align: center;
+  }
+
+  .details {
+    width: 100%;
+    text-align: center;
+  }
+
+  .details h3 {
+    font-size: 23px;
+  }
+
+  /* About css */
+
+  .about-title {
+    text-align: center;
+  }
+
+  .about-title .primary-title h2 {
+    font-size: 35px;
+  }
+
+  .about-title > span {
+    width: 100%;
+    padding: 0;
+  }
+
+  .about-content {
+    flex-direction: column;
+  }
+
+  .about-item .icon-box span {
+    display: inline-block;
+    margin: auto;
+    margin-bottom: 15px;
+  }
+
+  .about-item .details {
+    padding: 0px 30px;
+  }
+
+  .sm-mt-100 {
+    margin-top: 100px;
+  }
+
+  .sm-gap-30 {
+    gap: 30px;
+  }
+
+  .sm-mb-30 {
+    margin-bottom: 30px;
+  }
+
+  /* Security css */
+
+  .security-title .primary-title h2 {
+    font-size: 35px;
+  }
+
+  #features {
+    background-position: left bottom;
+  }
+
+  .feature-item .head h3 {
+    font-size: 18px;
+  }
+
+  /* Testimonial css */
+
+  .testimonial-title .primary-title h2 {
+    font-size: 35px;
+  }
+
+  .testimonial-title > span {
+    width: 100%;
+  }
+
+  /* Trail css */
+
+  .trail-title .primary-title h2 {
+    font-size: 35px;
+  }
+
+  /* Blog css */
+
+  .blog-item {
+    flex-direction: column;
+    gap: 50px;
+  }
+
+  .blog-title .primary-title h2 {
+    font-size: 35px;
+  }
+
+  .blog-title > span {
+    width: 100%;
+  }
+
+  #blog {
+    padding-bottom: 0;
+  }
+
+  /* Newsletter css */
+
+  #newsletter-section .form_group {
+    flex-direction: column;
+  }
+
+  .news-divider {
+    padding: 50px 15px 50px 15px;
+  }
+
+  .form {
+    text-align: center;
+  }
+
+  .form input[type="submit"] {
+    right: 30px;
+    width: 100px;
+  }
+
+  .form input {
+    padding-right: 120px;
+  }
+
+  .widget-2 h4,
+  .widget-3 h4,
+  .widget-4 h4,
+  .widget-5 h4 {
+    margin-bottom: 15px;
+  }
+
+  .sm-m-0 {
+    margin: 0;
+  }
 }
 
 /* Large Mobile :480px. */

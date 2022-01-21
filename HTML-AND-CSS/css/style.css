@@ -106,6 +106,10 @@ h6 {
   margin-right: -15px;
 }
 
+.d-none {
+  display: none;
+}
+
 .d-flex {
   display: flex;
 }
@@ -330,7 +334,7 @@ a.btn-primary::after {
   right: auto;
 }
 
-.menu ul li .dropdown {
+.menu ul li > .dropdown {
   position: absolute;
   width: 200px;
   border-radius: 5px;

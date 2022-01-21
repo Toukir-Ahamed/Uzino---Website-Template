@@ -76,6 +76,20 @@ $(document).ready(function(){
         focusOnSelect: true,
         variableWidth: true
     });
+
+    // Mobile nav
+
+    // icon_close
+
+    $(".multipages").click(function(e){
+        e.preventDefault();
+        $(".dropdown").fadeToggle('1000');
+    });
+
+    $(".mobile-nav .icon_menu").click(function(){
+        $("nav").fadeToggle('1000');
+    });
+
           
 
 });
