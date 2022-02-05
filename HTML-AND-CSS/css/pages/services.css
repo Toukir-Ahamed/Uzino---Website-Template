@@ -1,0 +1,63 @@
+/*
+
+Author: Toukir Ahamed
+Description: Uzino Website design
+
+*/
+
+/*
+
+CSS Index
+========================
+1. Services items css
+2. 
+
+*/
+
+/* 1. Services items css */
+
+.services-title span {
+  display: block;
+  width: 550px;
+  margin: auto;
+  line-height: 1.6;
+}
+
+.services-title h2 {
+  font-size: 40px;
+}
+
+.service-items h4 {
+  color: #1d2a3b;
+  font-size: 20px;
+  font-weight: 700;
+  margin: 30px 0px 15px 0px;
+}
+
+.service-items .icon {
+  margin: 0;
+}
+
+.service-items {
+  text-align: center;
+  padding: 30px;
+}
+
+.service-items span {
+  display: block;
+  line-height: 1.6;
+}
+
+.icon span {
+  position: relative;
+}
+
+.icon span::after {
+  content: url(../../images/service-icon-bg.png);
+  background-size: contain;
+  position: absolute;
+  left: 50%;
+  top: 0;
+  transform: translateX(-50%);
+  z-index: -1;
+}
