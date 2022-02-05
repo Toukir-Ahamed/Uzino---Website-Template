@@ -90,6 +90,19 @@ $(document).ready(function(){
         $("nav").fadeToggle('1000');
     });
 
+    // ACCORDION
+
+
+    var btn = $('.accordion-item button');
+
+    // console.log(btn[1]);
+
+    for(var i = 0; i < btn.length; i++) {
+        $(btn[i]).click(function(){
+            var panel = this.nextElementSibling;
+            $(panel).toggleClass("active");
+        });
+    }
           
 
 });

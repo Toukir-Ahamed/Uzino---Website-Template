@@ -1,0 +1,428 @@
+/*
+
+Author: Toukir Ahamed
+Description: Uzino Website design
+
+*/
+
+/*
+
+CSS Index
+========================
+1. Powerup css
+2. Vision css
+3. Team css
+4. Hiring css
+
+*/
+
+#header-top-title {
+  background: url("../../images/header-bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom center;
+}
+
+.header-title h2 {
+  font-size: 60px;
+  color: #fff;
+}
+
+.primary-title h2 {
+  font-size: 45px;
+}
+
+/* 1. Powerup css */
+
+.powerup-title > span {
+  display: block;
+  line-height: 1.8;
+  width: 80%;
+}
+
+.powerup-bottom span {
+  width: 60%;
+  margin: auto;
+}
+
+.powerup-bottom h2 {
+  width: 50%;
+}
+
+.pwb-bg {
+  background: url("../../images/powerup-bottom-img.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.pw-counter .item h1 {
+  color: var(--secondary-color);
+  font-weight: 700;
+  font-size: 50px;
+}
+
+.pw-counter {
+  justify-content: center;
+  padding-top: 70px;
+}
+
+.item {
+  padding: 0px 70px;
+  border-right: 1px solid #ddd;
+}
+
+/* 2. Vision css */
+
+#vision {
+  background: url("../../images/vision-bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top center;
+}
+
+.vision-title .primary-title h2 {
+  font-size: 40px;
+}
+
+.vision-title span {
+  font-size: 17px;
+  line-height: 1.7;
+}
+
+.vision-list {
+  margin-top: 15px;
+  line-height: 2;
+}
+
+.vision-list > span {
+  display: block;
+}
+
+.vision-list > span > span {
+  color: var(--secondary-color);
+  font-size: 25px;
+  margin-right: 10px;
+  position: relative;
+  top: 5px;
+}
+
+.vision-btn {
+  margin-top: 25px;
+}
+
+/* 3. Team css */
+
+.team-title .primary-title h2 {
+  font-size: 40px;
+}
+
+.team-member span {
+  display: block;
+}
+
+.team-member span.name {
+  color: #222 !important;
+  font-size: 20px !important;
+  font-weight: 700;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.team-member span:last-child {
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: var(--secondary-color);
+  margin-top: 10px;
+}
+
+.social-icon {
+  border-radius: 100px;
+  background: var(--primary-color);
+  color: #fff !important;
+}
+
+.social a:hover {
+  background: unset;
+}
+
+.social a:hover .social-icon {
+  background: var(--secondary-color);
+}
+
+span.social-icon.social_facebook {
+  position: relative;
+  left: 50%;
+  opacity: 0;
+}
+
+span.social-icon.social_instagram {
+  right: 50%;
+  position: relative;
+  opacity: 0;
+}
+
+span.social-icon.social_twitter {
+  opacity: 0;
+}
+
+.team-member:hover .social span.social-icon.social_facebook {
+  opacity: 1;
+  left: 0;
+  transition: 0.3s;
+}
+
+.team-member:hover .social span.social-icon.social_instagram {
+  opacity: 1;
+  right: 0;
+  transition: 0.3s;
+}
+
+.team-member:hover .social span.social-icon.social_twitter {
+  opacity: 1;
+  transition: 0.2s;
+}
+
+/* 4. Hiring css */
+
+.hiring-content span {
+  display: block;
+}
+
+.hiring-btn {
+  display: block;
+}
+
+.hiring-btn a {
+  display: inline-block;
+  color: #fff;
+  margin: 0;
+  border-radius: 3px;
+}
+
+/* Normal desktop :1200px. */
+@media (min-width: 1200px) and (max-width: 1500px) {
+}
+
+/* Normal desktop :992px. */
+@media (min-width: 992px) and (max-width: 1200px) {
+}
+
+/* Tablet desktop :768px. */
+@media (min-width: 768px) and (max-width: 991px) {
+  .container {
+    padding: 0px 30px;
+    width: 100%;
+  }
+
+  .col-md-2 {
+    width: 16.666%;
+  }
+
+  .col-md-10 {
+    width: 83.333%;
+  }
+
+  .menu ul li {
+    margin: 0px 12px;
+  }
+
+  a.btn-primary {
+    padding: 15px 35px !important;
+  }
+
+  .menu ul li > .dropdown {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  a.btn-primary {
+    margin-left: 10px;
+  }
+
+  /* Hero css */
+
+  .hero-content .hero-title {
+    font-size: 45px;
+  }
+
+  .about-title span {
+    width: unset;
+  }
+}
+
+/* small mobile :320px. */
+@media (max-width: 767px) {
+  .container {
+    padding: 0px 30px;
+    width: 100%;
+  }
+
+  .jc-s-b {
+    justify-content: space-between;
+  }
+
+  .sm-d-none {
+    display: none;
+  }
+
+  .sm-d-block {
+    display: block;
+  }
+
+  .sm-text-center {
+    text-align: center;
+  }
+
+  .col-sm-full {
+    width: 100%;
+  }
+
+  .col-sm-6 {
+    width: 50%;
+  }
+
+  nav .menu {
+    position: fixed;
+    background: #222;
+    text-align: left;
+    width: 300px;
+    height: 100vh;
+    left: 0px;
+    top: 0px;
+    z-index: 999;
+    padding-bottom: 15px;
+    overflow-y: auto;
+  }
+
+  nav .menu ul {
+    padding: 10px 20px;
+  }
+
+  nav .menu ul li {
+    display: block;
+    border-bottom: 1px solid rgba(117, 117, 117, 0.13);
+  }
+
+  nav .menu ul li:last-child {
+    border-bottom: none;
+  }
+
+  a.btn-primary {
+    margin-left: 0px;
+    margin-top: 30px;
+    text-align: center;
+  }
+
+  nav .menu ul li a {
+    display: block;
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    padding: 15px 0px;
+  }
+
+  .menu ul li a::after {
+    content: unset;
+  }
+
+  .multipages span {
+    cursor: pointer;
+    display: block;
+    color: #fff;
+    font-size: 20px;
+    position: absolute;
+    right: 0;
+    top: 10px;
+  }
+
+  nav .menu ul li > .dropdown {
+    opacity: 1;
+    top: 100%;
+    visibility: visible;
+  }
+
+  nav .menu ul li:hover > .dropdown {
+    top: 100%;
+  }
+
+  .dropdown {
+    width: 100% !important;
+    border-radius: 0px !important;
+    position: relative !important;
+    background: #222 !important;
+    border: 1px solid rgba(117, 117, 117, 0.13);
+    padding: 0px !important;
+    margin: 0px !important;
+  }
+
+  .dropdown nav ul {
+    padding: 0px 0px 0px 20px !important;
+  }
+
+  li .dropdown {
+    display: none;
+  }
+
+  .mobile-nav {
+    text-align: right;
+  }
+
+  .mobile-nav .icon_menu {
+    font-size: 30px;
+    color: #fff;
+    cursor: pointer;
+  }
+
+  /* Header css */
+
+  .header-title .primary-title h2 {
+    font-size: 40px;
+    padding-top: 50px;
+  }
+
+  /* Power Up */
+
+  #power-up {
+    padding-top: 70px;
+    padding-bottom: 0px;
+  }
+
+  .powerup-title h2 {
+    font-size: 35px;
+    width: 100%;
+  }
+
+  .powerup-title span {
+    width: 100%;
+  }
+
+  .pw-counter {
+    flex-direction: column;
+    padding-top: 0px;
+    padding-bottom: 0px;
+  }
+
+  .pw-counter .item {
+    border-right: unset;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 50px;
+    padding-top: 50px;
+  }
+
+  .pw-counter .item:last-child {
+    border: unset;
+  }
+
+  /* Vision css */
+
+  #vision {
+    padding-top: 0px;
+    background-position: bottom center;
+  }
+}
+
+/* Large Mobile :480px. */
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+}

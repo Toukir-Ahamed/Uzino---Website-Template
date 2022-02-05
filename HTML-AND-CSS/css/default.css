@@ -1,0 +1,276 @@
+/*
+
+Author: Toukir Ahamed
+Description: Uzino Website design
+
+*/
+
+/*
+
+CSS Index
+========================
+1. Default css
+
+*/
+
+/* 1. Default css */
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap");
+
+html {
+  scroll-behavior: smooth;
+}
+
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --primary-font: "Lato", sans-serif;
+}
+
+:root {
+  --primary-color: #1d2a3b;
+  --secondary-color: #545cf5;
+  --body-color: #747e8c;
+}
+
+body {
+  font-family: var(--primary-font);
+  font-weight: normal;
+  font-style: normal;
+  color: var(--body-color);
+}
+
+img {
+  max-width: 100%;
+}
+
+a {
+  text-decoration: none;
+  transition: 0.3s;
+  color: var(--body-color);
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--primary-font);
+  font-weight: normal;
+  margin-bottom: 15px;
+  font-style: normal;
+}
+
+.clearfix::after {
+  content: " ";
+  display: block;
+  clear: both;
+}
+
+.container {
+  width: 1170px;
+  margin: auto;
+}
+
+.m-auto {
+  margin: auto;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -15px;
+  margin-right: -15px;
+}
+
+.d-none {
+  display: none;
+}
+
+.d-flex {
+  display: flex;
+}
+
+.gap-30 {
+  gap: 30px;
+}
+
+.align-items-center {
+  align-items: center;
+}
+
+.space-between {
+  justify-content: space-between;
+}
+
+.space-around {
+  justify-content: space-around;
+}
+
+.flex-end {
+  justify-content: flex-end;
+}
+
+.align-content-center {
+  justify-content: center;
+}
+
+.col-1 {
+  width: 8.33%;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.col-2 {
+  width: 16.66%;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.col-3 {
+  width: 25%;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.col-4 {
+  width: 33.33%;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.col-5 {
+  width: 41.66%;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.col-6 {
+  width: 50%;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.col-7 {
+  width: 58.33%;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.col-8 {
+  width: 66.66%;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.col-9 {
+  width: 75%;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.col-12 {
+  width: 100%;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.pt-100 {
+  padding-top: 100px;
+}
+
+.pt-150 {
+  padding-top: 150px;
+}
+
+.pb-150 {
+  padding-bottom: 150px;
+}
+
+.mt-100 {
+  margin-top: 100px;
+}
+
+.mb-100 {
+  margin-bottom: 100px;
+}
+
+.pb-100 {
+  padding-bottom: 100px;
+}
+
+.relative {
+  position: relative;
+}
+
+.absolute {
+  position: absolute;
+}
+
+.d-none {
+  display: none;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.mb-30 {
+  margin-bottom: 30px;
+}
+
+.mb-40 {
+  margin-bottom: 40px;
+}
+
+.mt-50 {
+  margin-top: 50px;
+}
+
+.gap-50 {
+  gap: 50px;
+}
+
+.top-50 {
+  top: 50px;
+}
+
+.flex-d-col {
+  flex-direction: column;
+}
+
+.mb-50 {
+  margin-bottom: 50px;
+}
+
+.relative {
+  position: relative;
+}
+
+.absolute {
+  position: absolute;
+}
